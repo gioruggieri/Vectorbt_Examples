@@ -116,3 +116,5 @@ pf.stats()
 metric = 'total_return'
 perf = pf.deep_getattr(metric)
 print(perf.idxmax())
+results = pf.total_profit()
+pf[results.idxmax()].trades.plot().show('browser')
